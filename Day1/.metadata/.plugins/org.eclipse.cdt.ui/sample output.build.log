@@ -1,0 +1,9 @@
+14:23:50 **** Incremental Build of configuration Debug for project sample output ****
+Info: Internal Builder is used for build
+gcc -O0 -g3 -Wall -c -fmessage-length=0 -o "src\\sample output.o" "..\\src\\sample output.c" 
+..\src\sample output.c: In function 'main':
+..\src\sample output.c:16:2: error: expected ';' before 'return'
+..\src\sample output.c:17:1: warning: control reaches end of non-void function
+
+14:23:50 Build Failed. 1 errors, 1 warnings. (took 236ms)
+

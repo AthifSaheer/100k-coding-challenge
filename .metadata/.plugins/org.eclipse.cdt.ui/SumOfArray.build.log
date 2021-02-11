@@ -1,0 +1,11 @@
+19:32:51 **** Incremental Build of configuration Debug for project SumOfArray ****
+Info: Internal Builder is used for build
+gcc -O0 -g3 -Wall -c -fmessage-length=0 -o "src\\SumOfArray.o" "..\\src\\SumOfArray.c" 
+..\src\SumOfArray.c: In function 'main':
+..\src\SumOfArray.c:19:11: warning: comparison between pointer and integer
+gcc -o SumOfArray.exe "src\\SumOfArray.o" 
+c:/mingw64/bin/../lib/gcc/x86_64-w64-mingw32/4.5.4/../../../../x86_64-w64-mingw32/bin/ld.exe: cannot open output file SumOfArray.exe: Permission denied
+collect2: ld returned 1 exit status
+
+19:32:52 Build Failed. 1 errors, 1 warnings. (took 852ms)
+

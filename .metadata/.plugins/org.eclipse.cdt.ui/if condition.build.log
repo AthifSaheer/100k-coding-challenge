@@ -1,0 +1,7 @@
+09:11:58 **** Rebuild of configuration Debug for project if condition ****
+Info: Internal Builder is used for build
+gcc -O0 -g3 -Wall -c -fmessage-length=0 -o "src\\if condition.o" "..\\src\\if condition.c" 
+gcc -o "if condition.exe" "src\\if condition.o" 
+
+09:11:59 Build Finished. 0 errors, 0 warnings. (took 726ms)
+

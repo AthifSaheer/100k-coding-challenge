@@ -1,0 +1,25 @@
+15:58:50 **** Incremental Build of configuration Debug for project Function 4types ****
+Info: Internal Builder is used for build
+gcc -O0 -g3 -Wall -c -fmessage-length=0 -o "src\\Function 4types.o" "..\\src\\Function 4types.c" 
+..\src\Function 4types.c:22:5: error: redefinition of 'main'
+..\src\Function 4types.c:6:5: note: previous definition of 'main' was here
+..\src\Function 4types.c:30:1: warning: return type defaults to 'int'
+..\src\Function 4types.c:30:1: error: conflicting types for 'sum'
+..\src\Function 4types.c:11:6: note: previous definition of 'sum' was here
+..\src\Function 4types.c:38:5: error: conflicting types for 'sum'
+..\src\Function 4types.c:11:6: note: previous definition of 'sum' was here
+..\src\Function 4types.c:39:5: error: redefinition of 'main'
+..\src\Function 4types.c:6:5: note: previous definition of 'main' was here
+..\src\Function 4types.c:48:5: error: conflicting types for 'sum'
+..\src\Function 4types.c:11:6: note: previous definition of 'sum' was here
+..\src\Function 4types.c:56:5: error: conflicting types for 'sum'
+..\src\Function 4types.c:11:6: note: previous definition of 'sum' was here
+..\src\Function 4types.c:57:5: error: redefinition of 'main'
+..\src\Function 4types.c:6:5: note: previous definition of 'main' was here
+..\src\Function 4types.c:64:5: error: conflicting types for 'sum'
+..\src\Function 4types.c:11:6: note: previous definition of 'sum' was here
+..\src\Function 4types.c: In function 'sum':
+..\src\Function 4types.c:34:1: warning: control reaches end of non-void function
+
+15:58:50 Build Failed. 8 errors, 2 warnings. (took 411ms)
+

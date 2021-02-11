@@ -1,0 +1,4 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<session version="1.0">
+<refactoring comment="Rename type &apos;ifJava&apos; to &apos;Forloop_If&apos;&#x0D;&#x0A;- Original project: &apos;Forloop and If Java&apos;&#x0D;&#x0A;- Original element: &apos;ifJava&apos;&#x0D;&#x0A;- Renamed element: &apos;Forloop_If&apos;&#x0D;&#x0A;- Update references to refactored element&#x0D;&#x0A;- Update textual occurrences in comments and strings" description="Rename type &apos;ifJava&apos;" flags="589830" id="org.eclipse.jdt.ui.rename.type" input="/src&lt;{ifJava.java[ifJava" matchStrategy="1" name="Forloop_If" qualified="false" references="true" similarDeclarations="false" stamp="1612420606762" textual="false" version="1.0"/>
+</session>

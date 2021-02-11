@@ -1,0 +1,169 @@
+import java.awt.Color;
+import java.awt.Font;
+import java.awt.event.ActionEvent;
+import java.awt.event.ActionListener;
+
+import javax.swing.JButton;
+import javax.swing.JFrame;
+import javax.swing.JLabel;
+import javax.swing.SwingConstants;
+
+public class calculator implements ActionListener{
+	
+	JFrame jf;
+	JLabel Display;
+	JButton buttonSeven;
+	JButton buttonEight;
+	JButton buttonNine;
+	JButton buttonFour;
+	JButton buttonFive;
+	JButton buttonSix;
+	JButton buttonOne;
+	JButton buttonTwo;
+	JButton buttonThree;
+	JButton buttonZero;
+	JButton buttonDot;
+	JButton buttonEqualTo;
+	JButton buttonDivision;
+	JButton buttonMultiplication;
+	JButton buttonSubstraction;
+	JButton buttonAddition, buttonClear;
+	
+	public calculator() {
+		jf=new JFrame("Calculator");
+		jf.setLayout(null);
+		jf.setSize(450, 550);
+		jf.setLocation(350, 20);
+		
+		Display=new JLabel();
+		Display.setHorizontalAlignment(SwingConstants.RIGHT);
+		Display.setForeground(Color.white);
+		Display.setBounds(30, 30, 370, 40);
+		Display.setBackground(Color.gray);
+		Display.setOpaque(true);
+		
+		buttonSeven=new JButton("7");
+		buttonSeven.setBounds(30, 80, 65, 45);
+		buttonSeven.setFont(new Font("Arial", 0, 40));
+		buttonSeven.addActionListener(this);
+		
+		buttonEight=new JButton("8");
+		buttonEight.setBounds(100, 80, 65, 45);
+		buttonEight.addActionListener(this);
+		
+		
+		buttonNine=new JButton("9");
+		buttonNine.setBounds(170, 80, 65, 45);
+		buttonSeven.setFont(new Font("Arial", 0, 40));
+		buttonNine.addActionListener(this);
+		
+		buttonFour=new JButton("4");
+		buttonFour.setBounds(30, 130, 65, 45);
+		buttonFour.addActionListener(this);
+		
+		buttonFive=new JButton("5");
+		buttonFive.setBounds(100, 130, 65, 45);
+		buttonFive.addActionListener(this);
+		
+		buttonSix=new JButton("6");
+		buttonSix.setBounds(170, 130, 65, 45);
+		buttonSix.addActionListener(this);
+		
+		buttonOne=new JButton("1");
+		buttonOne.setBounds(30, 180, 65, 45);
+		buttonOne.addActionListener(this);
+		
+		buttonTwo=new JButton("2");
+		buttonTwo.setBounds(100, 180, 65, 45);
+		buttonTwo.addActionListener(this);
+		
+		buttonThree=new JButton("3");
+		buttonThree.setBounds(170, 180, 65, 45);
+		buttonThree.addActionListener(this);
+		
+		buttonZero=new JButton("0");
+		buttonZero.setBounds(30, 230, 65, 45);
+		buttonZero.addActionListener(this);
+		
+		buttonDot=new JButton(".");
+		buttonDot.setBounds(100, 230, 65, 45);
+		buttonDot.addActionListener(this);
+		
+		buttonEqualTo=new JButton("=");
+		buttonEqualTo.setBounds(170, 230, 65, 45);
+		
+		buttonDivision=new JButton("/");
+		buttonDivision.setBounds(240, 80, 75, 45);
+		
+		buttonMultiplication=new JButton("x");
+		buttonMultiplication.setBounds(240, 130, 75, 45);
+		
+		buttonSubstraction=new JButton("-");
+		buttonSubstraction.setBounds(240, 180, 75, 45);
+		
+		buttonAddition=new JButton("Clear");
+		buttonAddition.setBounds(240, 230, 75, 45);
+		
+		buttonClear=new JButton("+");
+		buttonClear.setBounds(320, 230, 75, 45);
+		
+		jf.add(buttonClear);
+		jf.add(buttonAddition);
+		jf.add(buttonSubstraction);
+		jf.add(buttonMultiplication);
+		jf.add(buttonDivision);
+		jf.add(buttonEqualTo);
+		jf.add(buttonDot);
+		jf.add(buttonZero);
+		jf.add(buttonThree);
+		jf.add(buttonTwo);
+		jf.add(buttonOne);
+		jf.add(buttonSix);
+		jf.add(buttonFive);
+		jf.add(buttonFour);
+		jf.add(buttonNine);
+		jf.add(buttonEight);
+		jf.add(buttonSeven);
+		jf.add(Display);
+		jf.setVisible(true);
+		jf.setDefaultCloseOperation(JFrame.EXIT_ON_CLOSE);
+	}
+	
+	public static void main(String[] args) {
+		calculator slc=new calculator();
+	}
+
+	@Override 
+	public void actionPerformed(ActionEvent e) {
+//		jf.getContentPane().setBackground(Color.white);
+		if(e.getSource()==buttonSeven) {
+			Display.setText(Display.getText()+"7");
+		}else if(e.getSource()==buttonEight) {
+			Display.setText(Display.getText()+"8");
+		}else if(e.getSource()==buttonNine) {
+			Display.setText(Display.getText()+"9");
+		}else if(e.getSource()==buttonFour) {
+			Display.setText(Display.getText()+"4");
+		}else if(e.getSource()==buttonFive) {
+			Display.setText(Display.getText()+"5");
+		}else if(e.getSource()==buttonSix) {
+			Display.setText(Display.getText()+"6");
+		}else if(e.getSource()==buttonOne) {
+			Display.setText(Display.getText()+"1");
+		}else if(e.getSource()==buttonTwo) {
+			Display.setText(Display.getText()+"2");
+		}else if(e.getSource()==buttonThree) {
+			Display.setText(Display.getText()+"3");
+		}else if(e.getSource()==buttonZero) {
+			Display.setText(Display.getText()+"0");
+		}else if(e.getSource()==buttonDot) {
+			Display.setText(".");
+		}else if(e.getSource()==buttonDot) {
+			Display.setText(".");
+		}else if(e.getSource()==buttonDot) {
+			Display.setText(".");
+		}else if(e.getSource()==buttonClear) {
+			Display.setText("");
+		}
+	}
+}
